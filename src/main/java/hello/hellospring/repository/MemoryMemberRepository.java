@@ -38,4 +38,8 @@ public class MemoryMemberRepository implements MemberRepository{
         return new ArrayList<>(store.values());
         // values == member, 쫙 반환해줍니당
     }
+    // 데이터 초기화 시켜주는 메서드
+    public void clearStore() {
+        store.clear();
+    }
 }
